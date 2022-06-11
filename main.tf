@@ -51,7 +51,7 @@ resource "aws_eks_cluster" "gitops-cicd-demo" {
 
   vpc_config {
     security_group_ids = [aws_security_group.cicd-cluster.id]
-    subnet_ids     = var.cluster_subnet_ids
+    subnet_ids         = var.cluster_subnet_ids
   }
 
   depends_on = [
