@@ -6,7 +6,7 @@ output "eks_cluster_name" {
   value = aws_eks_cluster.gitops-cicd-demo.name
 }
 
-output "eks_cluster_certificate_date" {
+output "eks_cluster_certificate_data" {
   value = aws_eks_cluster.gitops-cicd-demo.certificate_authority.0.data
 }
 
